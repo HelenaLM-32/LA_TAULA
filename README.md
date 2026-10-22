@@ -1,6 +1,6 @@
 # La Taula
 
-![Portada del proyecto La Taula](img/cover.svg)
+![Portada del proyecto La Taula](img/cover.png)
 
 Proyecto conceptual de branding y diseño web para un restaurante ficticio de cocina catalana en Barcelona. Creado como pieza de portfolio para practicar una landing page responsive con una identidad visual cálida y editorial.
 
