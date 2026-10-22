@@ -4,17 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi proyecto</title>
+    <title>La Taula - Cocina tradicional de Cataluña</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <body>
-    <div class="container py-5">
-        <h1>Hola Bootstrap</h1>
-        <button class="btn btn-primary">Botón</button>
-    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">La Taula</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#carta">Carta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#historia">Nuestra Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#opiniones">Opiniones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item ms-lg2"><a class="btn btn-primary" href="#contacto">Reservar mesa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <h1>Cocina de mercado en el corazón de Barcelona</h1>
+                        <p class="lead my-4">
+                            Producto de temporada, recetas de siempre y una mesa esperándote.
+                        </p>
+                        <a class="btn btn-primary btn-lg me-2" href="#contacto">Reservar mesa</a>
+                        <a class="btn btn-outline-dark btn-lg" href="#carta">Ver la carta</a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carta" class="section">
+            <div class="container">
+                <h2>Nuestra carta</h2>
+            </div>
+        </section>
+
+        <section id="historia" class="section section-alt">
+            <div class="container">
+                <h2>Nuestra historia</h2>
+            </div>
+        </section>
+
+        <section id="opiniones" class="section">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+        </section>
+
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <h2>Reserva tu mesa</h2>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">© 2026 La Taula. Proyecto de práctica, restaurante ficticio.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
