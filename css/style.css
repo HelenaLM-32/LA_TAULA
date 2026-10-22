@@ -80,15 +80,68 @@ h2 {
 }
 
 .hero-img {
-    min-height: 320px;
     background-color: var(--color-fondo-alt);
     border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+}
+
+.hero-img img,
+.historia-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .historia-img {
-    min-height: 340px;
+    height: auto;
+    aspect-ratio: 4 / 3;
     background-color: #E4D8C3;
     border-radius: 12px;
+}
+
+.section-intro {
+    margin-top: -1.25rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-color: var(--color-fondo-alt);
+}
+
+.estrellas {
+    color: var(--color-detalle);
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid var(--color-fondo-alt);
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    background-color: #fff;
+    border-color: #E4D8C3;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 0.25rem rgba(140, 47, 57, 0.2);
+}
+
+.horario li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #E4D8C3;
 }
 
 .footer {
