@@ -23,6 +23,8 @@ Proyecto conceptual de branding y diseño web para un restaurante ficticio de co
 
 ## Ver el proyecto
 
+Demo publicada: [la-taula.vercel.app](https://la-taula.vercel.app)
+
 Abre `index.html` en el navegador o sirve la carpeta con un servidor estático:
 
 ```bash
