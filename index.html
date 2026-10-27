@@ -291,11 +291,20 @@
     <script>
         const form = document.getElementById("form-reserva");
         const aviso = document.getElementById("aviso-reserva");
+        const menu = document.getElementById("menu");
 
         form.addEventListener("submit", (event) => {
             event.preventDefault();
             aviso.classList.remove("d-none");
             form.reset();
+        });
+
+        menu.querySelectorAll('a[href^="#"]').forEach((link) => {
+            link.addEventListener("click", () => {
+                if (window.matchMedia("(max-width: 991.98px)").matches) {
+                    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+                }
+            });
         });
     </script>
 </body>

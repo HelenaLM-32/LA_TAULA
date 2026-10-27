@@ -44,7 +44,7 @@ h2 {
 }
 
 .navbar-brand {
-    font-size: 1.6rem;
+    font-size: clamp(1.35rem, 4vw, 1.6rem);
     color: var(--color-texto);
 }
 
@@ -68,11 +68,11 @@ h2 {
 }
 
 .hero {
-    padding: 9rem 0 5rem;
+    padding: clamp(7rem, 14vh, 9rem) 0 clamp(3rem, 7vw, 5rem);
 }
 
 .section {
-    padding: 5rem 0;
+    padding: clamp(3.5rem, 8vw, 5rem) 0;
 }
 
 .section-alt {
@@ -148,4 +148,60 @@ h2 {
     background-color: var(--color-texto);
     color: var(--color-fondo);
     padding: 2rem 0;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 0.75rem 0 1rem;
+    }
+
+    .navbar-nav {
+        align-items: stretch;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.65rem 0;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .row.g-5 {
+        --bs-gutter-x: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    html {
+        scroll-padding-top: 72px;
+    }
+
+    .hero .row {
+        --bs-gutter-y: 2rem;
+    }
+
+    .hero h1 {
+        max-width: 16ch;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero .btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0 0 0.75rem !important;
+    }
+
+    .horario li {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .footer {
+        padding: 1.5rem 0;
+    }
 }
