@@ -6,6 +6,8 @@ Landing page conceptual para La Taula, un restaurante ficticio de cocina catalan
 
 **Demo:** [helena-la-taula.vercel.app](https://helena-la-taula.vercel.app)
 
+**Caso de estudio:** [Proceso del proyecto](proceso.html)
+
 ## Stack
 
 - HTML5 y CSS3.
@@ -16,6 +18,8 @@ Landing page conceptual para La Taula, un restaurante ficticio de cocina catalan
 ## Mi trabajo
 
 Diseño e implementación de la página completa: estructura y contenido, sistema visual, estilos responsive, navegación móvil y prototipo del formulario de reserva.
+
+La página `proceso.html` presenta el contexto, las decisiones visuales y algunos detalles de implementación del proyecto.
 
 ## Decisiones técnicas
 
