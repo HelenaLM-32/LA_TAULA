@@ -2,33 +2,40 @@
 
 ![Portada del proyecto La Taula](img/cover.png)
 
-Proyecto conceptual de branding y diseño web para un restaurante ficticio de cocina catalana en Barcelona. Creado como pieza de portfolio para practicar una landing page responsive con una identidad visual cálida y editorial.
+Landing page conceptual para La Taula, un restaurante ficticio de cocina catalana en Barcelona. El proyecto explora cómo trasladar una identidad cálida y editorial a una experiencia web clara, accesible y adaptable a móvil.
+
+**Demo:** [la-taula.vercel.app](https://la-taula.vercel.app)
 
 ## Stack
 
-- HTML5
-- CSS3
-- Bootstrap 5.3.3
-- JavaScript
-- Google Fonts: Cormorant Garamond e Inter
+- HTML5 y CSS3.
+- Bootstrap 5.3.3 para la cuadrícula, componentes y navegación móvil.
+- JavaScript nativo para las interacciones de la demo.
+- Cormorant Garamond e Inter, servidas desde Google Fonts.
 
-## Funcionalidades
+## Mi trabajo
 
-- Diseño adaptable a móvil y escritorio.
-- Navegación por secciones y menú responsive de Bootstrap.
-- Secciones de carta, historia, reseñas de ejemplo y contacto.
-- Formulario de reserva de demostración con validación del navegador y confirmación local.
+Diseño e implementación de la página completa: estructura y contenido, sistema visual, estilos responsive, navegación móvil y prototipo del formulario de reserva.
 
-> El restaurante, las reseñas y los datos de contacto son ficticios. El formulario no envía ni almacena solicitudes; no introduzcas datos reales.
+## Decisiones técnicas
 
-## Ver el proyecto
+- HTML semántico y CSS propio sobre Bootstrap 5.3.3, sin paso de compilación.
+- Maquetación responsive y navegación colapsable para móvil.
+- Formulario con etiquetas asociadas y validación nativa del navegador; la fecha no permite seleccionar días pasados.
+- Accesibilidad: enlace para saltar al contenido, foco visible, texto alternativo y respeto por la preferencia de movimiento reducido.
+- Imágenes optimizadas y carga diferida de la fotografía secundaria.
+- Metadatos de descripción y vista previa para compartir el enlace.
 
-Demo publicada: [la-taula.vercel.app](https://la-taula.vercel.app)
+## Alcance
 
-Abre `index.html` en el navegador o sirve la carpeta con un servidor estático:
+Es una pieza de portfolio frontend, no un servicio de reservas real. El formulario solo muestra una confirmación local y no envía ni guarda datos; el restaurante, las reseñas, el horario, la dirección y el mapa son ficticios. No introduzcas datos personales.
+
+## Ejecutar en local
+
+Abre `index.html` en el navegador o inicia un servidor estático desde la raíz del proyecto:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Después, visita `http://localhost:8000`.
+Visita `http://localhost:8000`. Bootstrap y las tipografías se cargan desde CDN, por lo que se necesita conexión a internet para esos recursos.

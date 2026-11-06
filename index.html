@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Taula</title>
+    <title>La Taula | Restaurante de cocina catalana en Barcelona</title>
+    <meta name="author" content="Helena López">
     <meta name="description"
         content="Restaurante de cocina catalana tradicional en Barcelona. Recetas de siempre, producto de proximidad y una mesa esperándote.">
+    <meta name="theme-color" content="#FAF5EC">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
     <meta property="og:title" content="La Taula — Restaurante de cocina catalana en Barcelona">
     <meta property="og:description"
         content="Un proyecto conceptual de restaurante catalán: sabores de casa, tradición y diseño web.">
@@ -20,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
         rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,8 +32,10 @@
 
 <body>
 
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navegación principal">
             <div class="container">
                 <a class="navbar-brand" href="#inicio">La Taula</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -50,7 +55,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
 
         <section id="inicio" class="hero">
             <div class="container">
@@ -60,11 +65,12 @@
                         <p class="lead my-4">
                             Recetas de la abuela, producto de proximidad y una mesa esperándote.
                         </p>
-                        <a class="btn btn-primary btn-lg me-2" href="#contacto">Ver reserva de ejemplo</a>
+                        <a class="btn btn-primary btn-lg me-2" href="#contacto">Simular una reserva</a>
                         <a class="btn btn-outline-dark btn-lg" href="#carta">Ver la carta</a>
                     </div>
                     <div class="col-lg-5">
-                        <div class="hero-img"><img src="img/hero.jpg" class="img-fluid rounded"
+                        <div class="hero-img"><img src="img/hero.jpg" class="img-fluid rounded" fetchpriority="high"
+                                decoding="async"
                                 alt="Plato de cocina catalana servido en la mesa">
                         </div>
                     </div>
@@ -133,7 +139,8 @@
                     </div>
 
                     <div class="col-md-6 order-md-first">
-                        <img src="img/historia.jpg" class="img-fluid rounded historia-img"
+                        <img src="img/historia.jpg" class="img-fluid rounded historia-img" loading="lazy"
+                            decoding="async"
                             alt="Interior de un restaurante de cocina catalana">
                     </div>
 
@@ -151,7 +158,7 @@
                     <div class="col-md-4">
                         <figure class="card h-100 mb-0">
                             <div class="card-body">
-                                <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+                                <p class="estrellas" role="img" aria-label="Valoración: 5 de 5 estrellas">★★★★★</p>
                                 <blockquote class="card-text">
                                     Los canelones de Sant Esteve son idénticos a los de mi abuela. Fui para una comida
                                     familiar y repetimos la semana siguiente.
@@ -164,7 +171,7 @@
                     <div class="col-md-4">
                         <figure class="card h-100 mb-0">
                             <div class="card-body">
-                                <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+                                <p class="estrellas" role="img" aria-label="Valoración: 5 de 5 estrellas">★★★★★</p>
                                 <blockquote class="card-text">
                                     La botifarra amb mongetes y la crema catalana, de otro nivel. Trato muy cercano y
                                     producto de verdad.
@@ -177,7 +184,7 @@
                     <div class="col-md-4">
                         <figure class="card h-100 mb-0">
                             <div class="card-body">
-                                <p class="estrellas" aria-label="4 de 5 estrellas">★★★★☆</p>
+                                <p class="estrellas" role="img" aria-label="Valoración: 4 de 5 estrellas">★★★★☆</p>
                                 <blockquote class="card-text">
                                     Una carta corta y bien hecha. Reservamos con tiempo porque se llena, pero merece la
                                     pena la espera.
@@ -194,13 +201,14 @@
         <section id="contacto" class="section section-alt">
             <div class="container">
                 <h2>Formulario de reserva</h2>
-                <p class="section-intro">Es una demostración: no introduzcas datos reales. El formulario no envía ni
-                    guarda solicitudes.</p>
+                <p id="ayuda-reserva" class="section-intro">
+                    Es una demostración: no introduzcas datos reales. El formulario no envía ni guarda solicitudes.
+                </p>
 
                 <div class="row g-5">
 
                     <div class="col-lg-7">
-                        <form id="form-reserva">
+                        <form id="form-reserva" autocomplete="off" aria-describedby="ayuda-reserva">
                             <div class="row g-3">
 
                                 <div class="col-md-6">
@@ -222,20 +230,20 @@
                                     <label for="hora" class="form-label">Hora</label>
                                     <select class="form-select" id="hora" required>
                                         <option value="" selected disabled>Elige hora</option>
-                                        <option>13:00</option>
-                                        <option>13:30</option>
-                                        <option>14:00</option>
-                                        <option>14:30</option>
-                                        <option>20:30</option>
-                                        <option>21:00</option>
-                                        <option>21:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
                                     </select>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label for="comensales" class="form-label">Comensales</label>
-                                    <input type="number" class="form-control" id="comensales" min="1" max="12" value="2"
-                                        required>
+                                    <input type="number" class="form-control" id="comensales" min="1" max="12"
+                                        value="2" required>
                                 </div>
 
                                 <div class="col-12">
@@ -245,14 +253,14 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary btn-lg">Probar formulario</button>
+                                    <button type="submit" class="btn btn-primary btn-lg">Simular reserva</button>
                                 </div>
 
                             </div>
                         </form>
 
                         <div id="aviso-reserva" class="alert alert-info d-none mt-4" role="status">
-                            Gracias, hemos recibido tu solicitud. Te confirmaremos la reserva por correo.
+                            Simulación completada. No se ha enviado ni guardado ninguna solicitud.
                         </div>
                     </div>
 
@@ -292,6 +300,10 @@
         const form = document.getElementById("form-reserva");
         const aviso = document.getElementById("aviso-reserva");
         const menu = document.getElementById("menu");
+        const fecha = document.getElementById("fecha");
+        const hoy = new Date();
+        hoy.setMinutes(hoy.getMinutes() - hoy.getTimezoneOffset());
+        fecha.min = hoy.toISOString().split("T")[0];
 
         form.addEventListener("submit", (event) => {
             event.preventDefault();
@@ -308,5 +320,6 @@
         });
     </script>
 </body>
+
 
 </html>
