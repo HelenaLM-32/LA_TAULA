@@ -4,7 +4,7 @@
 
 Landing page conceptual para La Taula, un restaurante ficticio de cocina catalana en Barcelona. El proyecto explora cómo trasladar una identidad cálida y editorial a una experiencia web clara, accesible y adaptable a móvil.
 
-**Demo:** [la-taula.vercel.app](https://la-taula.vercel.app)
+**Demo:** [helena-la-taula.vercel.app](https://helena-la-taula.vercel.app)
 
 ## Stack
 
